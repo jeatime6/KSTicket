@@ -1,0 +1,26 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__bd">
+        <view class="weui-cells__title">出发地</view>
+
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="选择出发地" value="{{Departure}}" bindfocus="selectCity" />
+                </view>
+            </view>
+        </view>  
+
+        <view class="weui-cells__title">目的地</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="选择目的地" value="{{Destination}}" bindfocus="selectCity" />
+                </view>
+            </view>
+        </view>  
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="search">确定</button>
+        </view>
+    </view>
+</view>
